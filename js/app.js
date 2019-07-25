@@ -22,10 +22,10 @@ class UI {
 
     row.innerHTML = ` 
       <td>${product.item}</td>
-      <td class="text-center">${product.marketPrice}</td>
-      <td>${product.cost}</td>
-      <td>${product.profit}</td> 
-      <td>${product.source}</td>
+      <td class="text-center">$ ${product.marketPrice}</td>
+      <td>$ ${product.cost}</td>
+      <td>$ ${product.profit}</td> 
+      <td> ${product.source}</td>
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
     list.appendChild(row);
