@@ -142,3 +142,10 @@ document.querySelector("#product-list").addEventListener("click", e => {
   // UI.showAlert("Item removed", "success");
   //   Remove book from Local Storage
 });
+
+// Enable popovers
+$(function() {
+  $('[data-toggle="popover"]').popover();
+});
+
+// type writer effect

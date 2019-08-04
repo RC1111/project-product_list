@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/calculator.css" />
+  <link rel="stylesheet" href="css/title.css" />
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.luman.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <title>My Product List</title>
+</head>
+
+<body>
+  <!-- Collapse Calculator Tools -->
+
+  <div class="text-center card_button ">
+    <h1 class="display-4 text-center py-2">
+      <span class="shadow-drop-center"><i class="fas fa-stream text-success slit-in-vertical "></i></span> My<span
+        class="text-success">
+        <strong>Product</strong></span> List
+      <!-- <br><span class="txt-type" data-wait="3000" data-words='["List ", "Research ", "Creator "]'></span> -->
+    </h1>
+
+
+    <a class="btn btn-warning" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">Basic Calculator</a>
+    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+      aria-expanded="false" aria-controls="multiCollapseExample2">
+      Profit Calculator
+    </button>
+    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#multiCollapseExample3"
+      aria-expanded="false" aria-controls="multiCollapseExample3">
+      To-do
+    </button>
+    <button class="btn btn-warning" type="button" data-toggle="collapse" data-target=".multi-collapse"
+      aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">
+      Toggle both Calculators
+    </button>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+      <div class="card card-body" style="border-style:none">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+  <div class="col card_1">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body card_1" style="border-style:none">
+        <!-- Start of Calculator. -->
+        <div class="calculator ">
+          <div class="calculator__header">
+            <h1>Calculator</h1>
+            <div class="calculator__operations">
+              <input type="text" class="calculator__input calculator__result" value="" />
+              <div class="calculator__backspace" data-control="backspace"></div>
+              <div class="calculator__result"></div>
+            </div>
+          </div>
+          <div class="calculator__controls keyboard">
+            <div data-control="7" class="keyboard__item">7</div>
+            <div data-control="8" class="keyboard__item">8</div>
+            <div data-control="9" class="keyboard__item">9</div>
+            <div data-control="/" class="keyboard__item">&divide;</div>
+            <div data-control="4" class="keyboard__item">4</div>
+            <div data-control="5" class="keyboard__item">5</div>
+            <div data-control="6" class="keyboard__item">6</div>
+            <div data-control="*" class="keyboard__item">&#10006;</div>
+            <div data-control="1" class="keyboard__item">1</div>
+            <div data-control="2" class="keyboard__item">2</div>
+            <div data-control="3" class="keyboard__item">3</div>
+            <div data-control="-" class="keyboard__item">&ndash;</div>
+            <div data-control="0" class="keyboard__item">0</div>
+            <div data-control="." class="keyboard__item">.</div>
+            <div data-control="=" class="keyboard__item">=</div>
+            <div data-control="+" class="keyboard__item">+</div>
+          </div>
+        </div>
+        <!-- End of Calculator -->
+      </div>
+    </div>
+  </div>
+  <div class="col card_1">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body" style="border:none">
+        <!-- Start of Profit Calc. -->
+        <div class="container calculator">
+          <div class="row">
+            <div class="col">
+              <form id="ebay-form">
+                <div class="form-group">
+                  <h3><strong>Ebay</strong></h3>
+                  <label for="SalePrice"><strong>Sale Price</strong></label>
+                  <input type="number" id="SalePrice" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ShippingPrice"><strong>Shipping Price</strong></label>
+                  <input type="number" id="ShippingPrice" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ProductCost"><strong>Cost of Product</strong></label>
+                  <input type="number" id="ProductCost" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ShippingCost"><strong>ShippingCost</strong></label>
+                  <input type="number" id="ShippingCost" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="source"><strong>eBay Fees</strong></label></br>
+                  <!-- <input type="text" id="source" class="form-control" /> -->
+                  <input type="radio" name='fees' onclick=checkedfees() id="eBayTen" placeholder="" value=".10"> 10%
+                  <input type="radio" name='fees' onclick=checkedfees() id="eBayTwelve" placeholder="" value=".12">
+                  12%
+                  <input type="radio" name='fees' onclick=checkedfees() id="eBayFifteen" placeholder="" value=".15">
+                  15%
+                </div>
+                <div class="form-group">
+                  <label for="source"><strong>PayPal Fees</strong></label><br>
+                  <!-- <input type="text" id="source" class="form-control" /> -->
+                  <input type="radio" name='paypalfees' onclick=paypfees() id="paypalStandardFees" placeholder=""
+                    value=".029">
+                  Standard
+                  Fees: $.30 + 2.9% <br>
+                </div><br><br>
+                <div class="form-group">
+                  <label for="ebay_profit"><strong>Profit</strong></label><br>
+                  <p id="ebay_profit"></p>
+                  <input type="button" class="btn btn-success" onclick="Calculate()" value="calculate">
+                  <!-- <input type="text" id="source" class="form-control" /> -->
+                </div>
+            </div>
+            <div class="col">
+              <form id="amazon-form">
+                <div class="form-group">
+                  <h3><strong>Amazon</strong></h3>
+                  <label for="SalePriceAMZ"><strong>Sale Price</strong></label>
+                  <input type="number" id="SalePriceAMZ" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ShippingPriceAMZ"><strong>Shipping Price</strong></label>
+                  <input type="number" id="ShippingPriceAMZ" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ProductCostAMZ"><strong>Cost of Product</strong></label>
+                  <input type="number" id="ProductCostAMZ" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="ShippingCostAMZ"><strong>ShippingCost</strong></label>
+                  <input type="number" id="ShippingCostAMZ" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group">
+                  <label for="source"><strong>Amazon Fees</strong></label></br>
+                  <div>
+                    <p id="printamzfee"></p>
+                  </div>
+                  <!-- <input type="text" id="source" class="form-control" /> -->
+                  <div id="FBAfees">
+                    <label for="source"><strong>Size Tiers</strong></label><br>
+
+                    <input type="radio" name='FBAfees' onclick=fbaFees() id="standardFees" placeholder="" value="2.41">
+                    Standard size <br>
+                    <input type="radio" name='FBAfees' onclick=fbaFees() id="largeFees" placeholder="" value="3.19">
+                    Large size 1 lb or
+                    less.<br>
+                    <input type="radio" name='FBAfees' onclick=fbaFees() id="large2Fees" placeholder="" value="4.71">
+                    Large size 1 lb or
+                    more.<br>
+                  </div>
+                  <p id="printamzfee"></p>
+                </div>
+
+
+
+                <div class="form-group">
+                  <label for="ebay_profit"><strong>Profit</strong></label></br>
+                  <p id="profitAMZ"></p>
+                  <input type="button" class="btn btn-success" onclick="CalculateAMZ()" value="calculate">
+                  <!-- <input type="button" class="btn btn-success" onclick="Calculate()" value="calculate"> -->
+                  <!-- <input type="text" id="source" class="form-control" /> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End of Profit Calc. -->
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- End of Collapse. -->
+
+  <div class="container mt-4">
+
+
+    <form id="product-form">
+      <div class="form-group">
+        <label for="item">Item</label>
+        <input type="text" id="item" class="form-control"
+          placeholder="Ex:     Garlic Press,  Fidget Spinners,  Iphone Cases" " />
+        </div>
+        <div class=" form-group">
+        <label for="martketPrice">Market Price</label>
+        <input type="text" id="marketPrice" class="form-control" placeholder="$ 100.00" />
+      </div>
+      <div class="form-group">
+        <label for="cost">Cost</label>
+        <input type="text" id="cost" class="form-control" placeholder="$ 0.00" />
+      </div>
+      <div class="form-group">
+        <label for="profit">Profit</label>
+        <input type="text" id="profit" class="form-control" placeholder="$ 100.00" />
+      </div>
+      <div class="form-group">
+        <label for="source">Source</label>
+        <input type="text" id="source" class="form-control" placeholder="Ex: Google.com" />
+      </div>
+      <input type="submit" value="Add Product" class="btn btn-success
+        btn-block buuton" />
+    </form>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th class="text-center">Market Price</th>
+          <th>Cost</th>
+          <th>Profit</th>
+          <th>Source</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="product-list"></tbody>
+    </table>
+
+  </div>
+
+
+
+  <footer>
+    <h4 class="text-center"><i class="fas fa-info-circle btn-light" data-container="body" data-toggle="popover"
+        data-placement="top" data-content="My Product List tool was created by an Ebay & Amazon Power Seller. "></i>
+    </h4>
+  </footer>
+
+  <!-- typewriter effect -->
+  <!-- <div class="container">
+      <h1>
+        <span class="txt-type" data-wait="1000" data-words='["List", "Research", "Invest","Profit","Repeat"]'></span>
+      </h1>
+    
+    </div> -->
+  <!-- end effect -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/app.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/profit.js"></script>
+  <!-- <script src="js/typewrite.js"></script> -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

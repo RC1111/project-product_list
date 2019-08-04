@@ -4,5 +4,15 @@
 }
 
 .card_1 {
-  background: #ede6e3;
+  background: white;
+}
+
+footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  color: black;
+  text-align: center;
 }
