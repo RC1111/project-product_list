@@ -25,7 +25,7 @@ class UI {
       <td class="text-center">$ ${product.marketPrice}</td>
       <td>$ ${product.cost}</td>
       <td>$ ${product.profit}</td> 
-      <td> ${product.source}</td>
+      <td>${product.source}</td>
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
     list.appendChild(row);
@@ -37,18 +37,18 @@ class UI {
     }
   }
 
-  static showAlert(message, className) {
-    const div = document.createElement("div");
-    div.className = `alert alert-${className}`;
-    div.appendChild(document.createTextNode(message));
+  // static showAlert(message, className) {
+  //   const div = document.createElement("div");
+  //   div.className = `alert alert-${className}`;
+  //   div.appendChild(document.createTextNode(message));
 
-    const container = document.querySelector(".container");
-    const form = document.querySelector("#product-form");
-    container.insertBefore(div, form);
+  //   const container = document.querySelector(".container");
+  //   const form = document.querySelector("#product-form");
+  //   container.insertBefore(div, form);
 
-    //
-    setTimeout(() => document.querySelector(".alert").remove(), 1000);
-  }
+  //   //
+  //   setTimeout(() => document.querySelector(".alert").remove(), 1000);
+  // }
 
   static clearFields() {
     document.querySelector("#item").value = "";
@@ -84,6 +84,7 @@ class Store {
       }
     });
     localStorage.setItem("products", JSON.stringify(products));
+    // localStorage.removeItem("products", JSON.stringify(products));
   }
 }
 
@@ -102,29 +103,28 @@ document.querySelector("#product-form").addEventListener("submit", e => {
   const source = document.querySelector("#source").value;
 
   //Validate
-  if (
-    item == "" ||
-    marketPrice == "" ||
-    cost == "" ||
-    profit == "" ||
-    source == ""
-  ) {
-    UI.showAlert("Please fill in all fields", "danger");
-  } else {
-    // Instatiate Product
-    const product = new Product(item, marketPrice, cost, profit, source);
+  // if (
+  //   item == "" ||
+  //   marketPrice == "" ||
+  //   cost == "" ||
+  //   profit == "" ||
+  //   source == ""
+  // ) {
+  //   UI.showAlert("Please fill in all fields", "danger");
+  // } else {
+  // Instatiate Product
+  const product = new Product(item, marketPrice, cost, profit, source);
 
-    //  add Item to UI
-    UI.addProductToList(product);
-    //   Add item to store
-    Store.addProduct(product);
+  //  add Item to UI
+  UI.addProductToList(product);
+  //   Add item to store
+  Store.addProduct(product);
 
-    //   Show success message
-    UI.showAlert("Item Added", "success");
+  //   Show success message
+  // UI.showAlert("Item Added", "success");
 
-    //   Clear Fields
-    UI.clearFields();
-  }
+  //   Clear Fields
+  UI.clearFields();
 });
 
 // Event: Calculate and display product
@@ -139,6 +139,6 @@ document.querySelector("#product-list").addEventListener("click", e => {
     e.target.parentElement.previousElementSibling.textContent
   );
 
-  UI.showAlert("Item removed", "success");
+  // UI.showAlert("Item removed", "success");
   //   Remove book from Local Storage
 });
