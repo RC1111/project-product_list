@@ -1,18 +1,64 @@
-.card_button {
-  background: #ede6e3;
-  padding-top: 20px;
+@font-face {
+  font-family: breezedcaps;
+  src: url("../fonts/former.ttf");
 }
 
+.primary {
+  color: #272727;
+}
+.background_color {
+  background: #272727;
+}
+
+.secondary {
+  background-color: #747474;
+}
+.font_primary {
+  color: #eee2dc;
+}
+
+.card_button {
+  background: #272727;
+  padding-top: 20px;
+}
+.logo_1 {
+  color: #14a76c;
+}
+.logo_2 {
+  color: #eee2dc;
+}
 .card_1 {
-  background: white;
+  background: #272727;
 }
 
 footer {
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background: white;
-  color: black;
+  background: #272727;
+  color: #eee2dc;
+
   text-align: center;
+}
+
+/* Moble viewport order */
+
+@media (max-width: 700px) {
+  .utility {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    background-color: #272727;
+    text-align: center;
+    display: over;
+    z-index: 10;
+    /* opacity: 0; */
+  }
+
+  .calc_1 {
+    opacity: 1;
+  }
 }

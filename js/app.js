@@ -22,9 +22,9 @@ class UI {
 
     row.innerHTML = ` 
       <td>${product.item}</td>
-      <td class="text-center">$ ${product.marketPrice}</td>
-      <td>$ ${product.cost}</td>
-      <td>$ ${product.profit}</td> 
+      <td class="text-center">${product.marketPrice}</td>
+      <td>${product.cost}</td>
+      <td>${product.profit}</td> 
       <td>${product.source}</td>
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
@@ -148,4 +148,17 @@ $(function() {
   $('[data-toggle="popover"]').popover();
 });
 
-// type writer effect
+// quote
+
+var myArray = [
+  "“Whatever the mind of man can conceive and believe, it can achieve.” – Napoleon Hill",
+  "“The tragedy in life doesn’t lie in not reaching your goal. The tragedy lies in having no goal to reach.” – Benjamin Mays",
+  "“Strive not to be a success, but rather to be of value.” – Albert Einstein",
+  "“The future depends on what you do today.” – Mahatma Gandhi"
+];
+
+var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+
+// var intervalID = window.setInterval(myArray, 2000);
+
+document.getElementById("quote").innerHTML = randomItem;

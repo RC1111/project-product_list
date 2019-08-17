@@ -2,7 +2,9 @@
 :root {
   --main-background: rgb(255, 255, 255);
   --text-color: rgb(81, 81, 81);
-  --secondary-color: rgb(238, 238, 238);
+  /* --secondary-color: rgb(238, 238, 238); */
+  --secondary-color: #747474;
+
   --accent-color: rgba(0, 0, 0, 0.12);
   --global-padding: 10px;
 }
@@ -12,19 +14,19 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   line-height: 1.6;
   font-size: 16px;
   min-width: 320px;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   height: 100%;
   word-wrap: break-word;
   background-color: var(--main-background);
   color: var(--text-color);
-}
+} */
 
 body,
 input,
